@@ -1,0 +1,209 @@
+/*font*/
+
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    background-color: lightseagreen;
+}
+
+.responsive {
+    float: left;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    font-family: 'Russo One', sans-serif;
+    font-size: 0.8rem;
+}
+
+/*read more about the dish*/
+.myBtn {
+    align-items: center;
+    float: left;
+    color: white;
+    background-color: transparent;
+    border-color: azure;
+    border: 1px solid #e7e7e7;
+    margin-top: 10px;
+
+
+}
+
+.logo {
+    margin-left: 50px;
+    width: 100px;
+    top: 30px;
+}
+
+.category {
+    font-family: 'Russo One', sans-serif;
+    color: azure;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 1em;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: azure;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: red;
+}
+
+
+
+/*grid*/
+.grid-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    background-color: aqua;
+    width: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}
+
+.grid-item {
+    background-color: darkcyan;
+    width: 100%;
+
+    text-align: left;
+    line-height: 1em;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+
+}
+
+
+
+#header {
+    font-family: 'Russo One', sans-serif;
+    color: azure;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 1em;
+    display: inline-block;
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+.menu {
+    font-family: 'Russo One', sans-serif;
+    color: azure;
+    background-color: darkseagreen;
+    grid-column: 1/-1;
+
+}
+
+.headline {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1em;
+    float: left;
+    margin-left: 10px;
+
+}
+
+.images {
+    border-radius: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.shortDescription {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    font-size: 1em;
+
+}
+
+.courseDetails {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: lightseagreen;
+}
+
+/*SoldOut_before
+.soldOut {
+    position: relative;
+    width: 100%;
+    opacity: 0.8;
+    background-color: red;
+    text-align: center;
+    top: -50px;
+}*/
+
+.soldOut {
+    width: 90px;
+    height: 30px;
+    background: red;
+    border-radius: 10%;
+    position: relative;
+    top: -100px;
+    margin-left: 50%;
+    text-align: center;
+    display: inline-block;
+
+
+}
+
+
+
+/*read more text*/
+#more {
+    display: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    font-size: 1em;
+}
